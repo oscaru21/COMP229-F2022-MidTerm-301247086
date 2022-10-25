@@ -1,3 +1,10 @@
+/**
+ * File name: app.js
+ * author: Oscar Umana
+ * student ID: 301247086
+ * Date: 2022-10-25
+ * Web App name: Favourite Car List
+ */
 // moddules for node and express
 let createError = require("http-errors");
 let express = require("express");
@@ -37,6 +44,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../../client")));
+app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 // route redirects
 app.use("/", index);

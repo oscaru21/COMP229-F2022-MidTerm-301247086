@@ -5,10 +5,7 @@
   <div class="row">
     <div class="col-md-offset-1 col-md-10">
       <h3>Favourite Cars List</h3>
-      <!-- ------------------------ -->
-      <!-- FIX THE ADD BUTTON BELOW -->
-      <!-- ------------------------ -->
-      <a href="" class="btn btn-primary"
+      <a href="/cars/add" class="btn btn-primary"
         ><i class="fa fa-plus"></i> Add a car</a
       >
       <br />
@@ -20,7 +17,7 @@
               <th class="text-center">Car Model</th>
               <th class="text-center">Category</th>
               <th class="text-center">Price</th>
-              <th class="text-center"></th>
+              <th class="text-center">Edit</th>
                </tr>
           </thead>
           <tbody>
@@ -31,12 +28,11 @@
 
               <td class="text-center"><%= cars[count].Category %></td>
               <td class="text-center"><%= cars[count].Carmodel %></td>
-              <td class="text-center"><%= cars[count].Price %></td>
+              <td class="text-center"><%= cars[count].Price %></td> 
 
               <td class="text-center">
-                <!-- ------------------------ -->
-                <!-- ADD the EDIT BUTTON HERE -->
-                <!-- ------------------------ -->
+                <a href="/cars/<%= cars[count]._id %>" class="btn btn-sm">
+                <i class="fas fa-pencil-alt"></i> Edit</a>
               </td>
 
               
@@ -45,11 +41,8 @@
           </tbody>
         </table>
       </div>
-      <!-- ------------------------ -->
-                <!--FIX the DELETE BUTTON HERE -->
-                <!-- ------------------------ -->
-      <a href="" class="btn btn-warning btn-sm">
-        <i class="fas fa-trash"></i> Delete</a>
+      <a href="/cars/delete" class="btn btn-warning btn-sm">
+      <i class="fas fa-trash"></i> Delete</a>
     </main>
       <div class="col-md-offset-1 col-md-10 text-center">
         <ul class="pagination pagination-lg pager" id="myPager"></ul>

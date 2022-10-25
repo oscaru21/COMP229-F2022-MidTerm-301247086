@@ -1,3 +1,10 @@
+/**
+ * File name: cars.js
+ * author: Oscar Umana
+ * student ID: 301247086
+ * Date: 2022-10-25
+ * Web App name: Favourite Car List
+ */
 let mongoose = require("mongoose");
 
 // create a model class
