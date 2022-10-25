@@ -39,6 +39,7 @@ router.get("/add", (req, res, next) => {
 
 // POST process the Car  Details page and create a new Car  - CREATE
 router.post("/add", (req, res, next) => {
+  //CREATE NEW CAR OBJECT
   let newCar = car({
     Carname: req.body.Carname,
     Category: req.body.Category,
@@ -57,6 +58,7 @@ router.post("/add", (req, res, next) => {
   });
 });
 
+//MOVED DELETE ROUTE BEFORE EDIT ROUTES TO AVOID COLLISIONS
 // GET - process the delete
 router.get("/delete", (req, res, next) => {
   //removes all the documents with Carname equals to "Sentra"
