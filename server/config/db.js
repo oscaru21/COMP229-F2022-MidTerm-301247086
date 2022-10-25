@@ -7,5 +7,6 @@
  */
 module.exports = {
   //local MongoDB deployment ->
-  URI: "mongodb://127.0.0.1/car_store",
+ //URI: "mongodb://127.0.0.1/car_store",
+ URI: "mongodb+srv://newuser:NYArAf04sj2zrz4E@cluster0.4p4vbae.mongodb.net/car_store?retryWrites=true&w=majority"
 };
